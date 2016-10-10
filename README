@@ -1,0 +1,111 @@
+Step 1: Jumbotron 
+
+	Create a div with "jumbotron text-center" (<div class="jumbotron text-center"></div>)
+
+	Add a heading and a paragraph (h1 tag and p tag)
+
+Step 2: Form 
+
+	Create a form with the following fields:
+
+	Name (type text)
+
+	Email (type email)
+
+	How do you rate boostrap? (Select box)
+
+	What are your thoughts on Bootstrap? (Text box)
+
+	Differences from a regular form: 
+
+	Wrap label + input with a form group (<div class="form-group">label input</div>)
+
+	<input class="form-control"></input>
+
+	Put everything in a container (<div class="container"></div>)
+
+Step 3: Carousel 
+	
+	Make the Carousel (<div class="carousel slide" data-ride="carousel" id="myCarousel"></div>)
+
+	Add the indicators:
+ 
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		...
+	</ol>
+
+	Add the items:
+
+      	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img src="GalaxyCluster.jpg" alt="Space">
+		</div>
+
+		<div class="item">
+		  <img src="InteractingGalaxies.jpg" alt="Space">
+		</div>
+		...
+	</div>
+
+	Add the controls:
+
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	</a>
+      	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      	</a>
+
+	Add the style:
+
+	<style>
+	.carousel-inner > .item > img {
+	        width: 70%;
+     		margin: auto;
+      		height: 500px;
+  	}
+  	</style>
+
+Step 4: Grid
+
+	Put the grid and carousel in a row:
+
+	<div class="row">form carousel</div>
+	
+	Make the form and carousel six columns wide on medium:
+
+	<div class="col-md-6">form</div> <div class="col-md-6">carousel</div>
+
+Step 5: Add the navbar
+	
+	Create the nav OUTSIDE the container: 
+
+	<nav class="navbar navbar-default"></nav>
+
+	Add a container fluid container inside the nav:
+	    
+	<div class="container-fluid"></div>
+
+	Add a navbar header:
+
+	<div class="navbar-header">
+        <a class="navbar-brand" href="#">Bootstrap Demo</a>
+      	</div>
+
+	Add list elements: 
+
+      	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">Page 1</a></li>
+		<li><a href="#">Page 2</a></li>
+		<li><a href="#">Page 3</a></li>
+      	</ul>
+
+	Add a margin of 0 to the jumbotron:
+
+	.jumbotron {
+        	margin: 0;
+    	}
+	
